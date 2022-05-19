@@ -1,45 +1,43 @@
-import java.util.ArrayList;
-
 public class Users {
 
     private String id;
-    private String firstName;
-
-    private String lastName;
+    private String lastname;
+    private String firstname;
     private String email;
-    private String password;
+    private String mdp;
 
-    public Users(String id, String firstName, String lastName, String email, String password) {
+    public Users(String id, String lastname, String firstname, String email, String mdp) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.lastname = lastname;
+        this.firstname = firstname;
         this.email = email;
-        this.password = password;
+        this.mdp = mdp;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public String getFirstname() {
+        return firstname;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getMdp() {
+        return mdp;
     }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
 
     @Override
     public String toString() {
         return "Users{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                "lastname='" + lastname + '\'' +
+                ", firstname='" + firstname + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
+
+
 }
